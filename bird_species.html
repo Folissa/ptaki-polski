@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Birds</title>
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Readex+Pro" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="page">
+		<header class="flex_container">
+			<h1><a href="index.html">Ptaki Polski<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-feather" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4" />
+				<path d="M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4" />
+			</svg></a></h1>
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path class="visibility" stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<line class="visibility" x1="4" y1="6" x2="20" y2="6" />
+				<line class="visibility" x1="4" y1="12" x2="20" y2="12" />
+				<line class="visibility" x1="4" y1="18" x2="20" y2="18" />
+			</svg>
+			<nav id="menu">
+				<ul>
+					<li class="dropdown"><a href="index.html">Strona główna</a>
+						<ul class="dropdown_menu dropdown_menu_animated">
+							<li class="dropdown_item"><a class="clickable" href="index.html#about">O mnie</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a class="active" href="bird_species.html">Gatunki ptaków</a>
+						<ul class="dropdown_menu dropdown_menu_animated">
+							<li class="dropdown_item"><a class="clickable" href="bird_species.html#great_tit">Bogatka zwyczajna</a></li>
+							<li class="dropdown_item"><a class="clickable" href="bird_species.html#blue_tit">Modraszka zwyczajna</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		<br />
+		<div id="content">
+			<h1>Gatunki ptaków</h1>
+			<section id="species_about">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</section>
+			<section id="species">
+				<div class="flex_container_section" id="great_tit">
+					<div>
+						<h2>Bogatka zwyczajna</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					<figure>
+						<a href="images/great_tit_eating_1920x1080.jpg" target="_blank"><img src="images/great_tit_eating_640x360.jpg"/></a>
+						<figcaption>
+							<audio controls>
+								<source src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Parus_major_15mars2011.ogg" />
+							</audio>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="flex_container_section" id="blue_tit">
+					<div>
+						<h2>Modraszka zwyczajna</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					<figure>
+						<a href="images/blue_tit_eating_1920x1080.jpg" target="_blank"><img src="images/blue_tit_eating_640x360.jpg"/></a>
+						<figcaption>
+							<audio controls>
+								<source src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Blue_Tit_%28Cyanistes_caeruleus%29_%28W1CDR0001535_BD30%29.ogg" />
+							</audio>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+		</div>
+		<br />
+		<footer class="flex_container">
+			<nav>
+				<ul>
+					<li>© 2022 Anna Berkowska</li>
+					<li><a href="#">Do góry</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>

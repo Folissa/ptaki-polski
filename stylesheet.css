@@ -12,13 +12,9 @@ body {
     margin: 5vh;
 }
 
-svg {
-    width: 40px;
-    height: 40px;
-}
-
-.visibility {
-    display: none;
+section {
+    padding: 2em;
+    font-size: 2.25em;
 }
 
 .flex_container {
@@ -27,13 +23,14 @@ svg {
     align-items: center;
 }
 
-#species_about {
-    padding: 2em 2em 0 2em;
-}
-
 header h1 {
     color: #847715;
     font-size: 3em;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
 }
 
 nav {
@@ -56,112 +53,13 @@ a {
     font-weight: bold;
 }
 
-#content {
-    background: #77ABDB;
-    border-radius: 28px;
-    color: #F7FBF4;
-}
-
-#content h1 {
-    position: relative;
-    top: 0.4em;
-    font-size: 4em;
-    text-align: center;
-}
-
-#hero h1 {
-    font-size: 10em;
-
-}
-
-#content img {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-}
-
-#species img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
-figure {
-    padding: 1em 0 1em 0;
-}
-
-.flex_container_section {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-audio {
-    width: 25vw;
-    border-radius: 20px;
-}
-
-section {
-    padding: 2em;
-    font-size: 2em;
-}
-
-#hero, #contact {
-    padding: unset;
-    font-size: unset;
-}
-
-form {
-    font-size: 2em;
-    padding: 2em;
-    width: 30%;
-    margin: auto;
-}
-
-fieldset {
-    padding: 1em;
-    border: solid 2px white;
-    border-radius: 20px;
-}
-
-fieldset label {
-    font-size: 75%;
-}
-
-input {
-    width: 50%;
-}
-
-.button {
-    padding: 0.25em;
-    margin: 0.25em;
-    float: right;
-    width: initial;
-}
-
-textarea {
-    width:98%;
-    height: 15vh;
-    resize: none;
-    padding: 0.25em;
-}
-
-textarea::placeholder {
-    color: #706a6f;
+.visibility {
+    display: initial;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-}
-
-.dropdown:hover .dropdown_menu_animated {
-    display: block;
-}
-
-.dropdown_menu li {
-    display: block;
 }
 
 .dropdown_menu {
@@ -174,6 +72,15 @@ textarea::placeholder {
     top: 100%;
 }
 
+.dropdown:hover .dropdown_menu_animated {
+    display: block;
+    z-index: 1;
+}
+
+.dropdown_menu li {
+    display: block;
+}
+
 .dropdown_menu li:hover {
     background: #98891a;
     border-radius: 5px;
@@ -182,112 +89,277 @@ textarea::placeholder {
 .dropdown_item {
     font-size: 70%;
     padding: 0;
-
 }
 
 .clickable {
+    position: relative;
+    z-index: 1;
     display: block;
     padding: 5%;
 }
 
+#content {
+    background: #77ABDB;
+    border-radius: 28px;
+    color: #F7FBF4;
+}
+
+h2, #contact h2 {
+    font-size: 4em;
+}
+
+section h2 {
+    font-size: 1.25em;
+}
+
+#hero h2 {
+    font-size: 10em;
+}
+
+.header {
+    position: relative;
+    top: 0.3em;
+    text-align: center;
+    z-index: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#hero, #contact {
+    padding: unset;
+    font-size: unset;
+}
+
+#hero img {
+    position: relative;
+}
+
+#species_about {
+    padding: 2em 2em 0 2em;
+}
+
+#species img {
+    border-radius: 20px;
+}
+
+.flex_container_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about div {
+    flex-basis: 50%;
+    flex-grow: 2;
+}
+
+figure {
+    margin: 0.5em;
+}
+
+.about figure {
+    margin: 0.5em 0 0.5em 0.5em;
+}
+
+audio {
+    border-radius: 20px;
+    width: 100%;
+}
+
+form {
+    padding: 2em;
+    width: 40vw;
+    margin: auto;
+}
+
+fieldset {
+    padding: 1em;
+    border: solid 2px white;
+    border-radius: 20px;
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+
+input {
+    vertical-align: middle;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: initial;
+    display: inline;
+}
+
+.choice div {
+    display: inline;
+}
+
+.choice label {
+    font-size: 80%;
+}
+
+.button {
+    padding: 0.25em;
+    margin: 0.25em;
+    float: right;
+    width: initial;
+}
+
+textarea {
+    width: 98%;
+    height: 15vh;
+    resize: none;
+    padding: 0.25em;
+}
+
+textarea::placeholder {
+    color: #706a6f;
+}
+
 @media screen
-and (device-width: 360px)
-and (device-height: 592px) {
-    #page {
-        margin: 3vh;
-    }
+and (max-device-width: 360px)
+and (max-device-height: 592px) {
+
     body {
         font-size: 50%;
     }
 
-    h1 svg   {
-        width: 7%;
-        height: 7%;
+    #page {
+        margin: 3vh;
     }
 
-    svg {
-        width: 10%;
-        height: 10%;
+    #menu ul{
+        display: flex;
+        flex-flow: wrap column;
     }
 
-    #menu {
+    #menu nav li {
+        display: block;
+    }
+
+    .choice div {
+        display: block;
+    }
+
+    .dropdown_item a {
         display: none;
     }
 
-    #hero h1 {
+    p {
+        text-align: justify;
+    }
+
+    svg {
+        width: 9%;
+        height: 9%;
+    }
+
+    h2 {
+        font-size: 4em;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+
+    #hero h2 {
         font-size: 5em;
     }
 
-    .visibility {
-        display: initial;
+    #species_about {
+        padding: 0.75em 2em 0 2em;
     }
 
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.8em;
+    }
+
+    form {
+        width: 70vw;
+    }
+
+    .choice label {
+        font-size: 90%;
+    }
+
+    input {
+        display: block;
+        width: 119%;
+    }
 }
 
 @media screen
-and (device-width: 360px)
-and (device-height: 592px)
+and (max-device-width: 360px)
+and (max-device-height: 592px)
 and (orientation: portrait) {
-    #page {
-        margin: 3vh;
-    }
+
     body {
         font-size: 50%;
     }
 
-    h1 svg   {
-        width: 7%;
-        height: 7%;
-    }
-
-    svg {
-        width: 10%;
-        height: 10%;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    #hero h1 {
-        font-size: 5em;
-    }
-
-    .visibility {
-        display: initial;
-    }
-}
-
-@media screen
-and (device-width: 360px)
-and (device-height: 592px)
-and (orientation: landscape) {
     #page {
         margin: 3vh;
     }
-    body {
-        font-size: 50%;
+
+    #menu ul{
+        display: flex;
+        flex-flow: wrap column;
     }
 
-    h1 svg  {
-        width: 7%;
-        height: 7%;
+    #menu nav li {
+        display: block;
     }
 
-    svg {
-        width: 10%;
-        height: 10%;
+    .choice div {
+        display: block;
     }
 
-    #menu {
+    .dropdown_item a {
         display: none;
     }
 
-    #hero h1 {
+    p {
+        text-align: justify;
+    }
+
+    svg {
+        width: 9%;
+        height: 9%;
+    }
+
+    h2 {
+        font-size: 4em;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+
+    #hero h2 {
         font-size: 5em;
     }
 
-    .visibility {
-        display: initial;
+    #species_about {
+        padding: 0.75em 2em 0 2em;
+    }
+
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.8em;
+    }
+
+    form {
+        width: 70vw;
+    }
+
+    .choice label {
+        font-size: 90%;
+    }
+
+    input {
+        display: block;
+        width: 119%;
     }
 }

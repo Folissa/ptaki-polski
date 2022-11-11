@@ -8,58 +8,55 @@
     <link href="https://fonts.googleapis.com/css?family=Readex+Pro" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="page">
-        <header class="flex_container">
-            <h1><a href="index.html">Ptaki Polski<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-feather" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4" />
-                <path d="M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4" />
-            </svg></a></h1>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path class="visibility" stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <line class="visibility" x1="4" y1="6" x2="20" y2="6" />
-                <line class="visibility" x1="4" y1="12" x2="20" y2="12" />
-                <line class="visibility" x1="4" y1="18" x2="20" y2="18" />
-            </svg>
-            <nav id="menu">
-                <ul>
-                    <li class="dropdown"><a class="active" href="index.html">Strona główna</a>
-                        <ul class="dropdown_menu dropdown_menu_animated">
-                            <li class="dropdown_item"><a class="clickable" href="index.html#about">O mnie</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="bird_species.html">Gatunki ptaków</a>
-                        <ul class="dropdown_menu dropdown_menu_animated">
-                            <li class="dropdown_item"><a class="clickable" href="bird_species.html#great_tit">Bogatka zwyczajna</a></li>
-                            <li class="dropdown_item"><a class="clickable" href="bird_species.html#blue_tit">Modraszka zwyczajna</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
-        <br />
-        <div id="content">
-            <section id="hero">
-                <h1>Pierzaści przyjaciele</h1>
-                <img src="images/great_tit.png" alt="great_tit"/>
-            </section>
-            <br />
-            <section>
-                <p id="about">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </section>
-        </div>
-        <br />
-        <footer class="flex_container">
-            <nav>
-                <ul>
-                    <li>© 2022 Anna Berkowska</li>
-                    <li><a href="#">Do góry</a></li>
-                </ul>
-            </nav>
-        </footer>
+<div id="page">
+    <header class="flex_container">
+        <h1><a href="index.html">Ptaki Polski<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-feather" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4" />
+            <path d="M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4" />
+        </svg></a></h1>
+        <nav id="menu">
+            <ul>
+                <li class="dropdown"><a class="active" href="index.html">Strona główna</a>
+                    <ul class="dropdown_menu dropdown_menu_animated">
+                        <li class="dropdown_item"><a class="clickable" href="index.html#about">O mnie</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="bird_species.html">Gatunki ptaków</a>
+                    <ul class="dropdown_menu dropdown_menu_animated">
+                        <li class="dropdown_item"><a class="clickable" href="bird_species.html#species_about">O gatunkach</a></li>
+                        <li class="dropdown_item"><a class="clickable" href="bird_species.html#great_tit">Bogatka zwyczajna</a></li>
+                        <li class="dropdown_item"><a class="clickable" href="bird_species.html#blue_tit">Modraszka zwyczajna</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div id="content">
+        <section id="hero">
+            <h2 class="header">Pierzaści przyjaciele</h2>
+            <img src="images/great_tit.png" alt="Bogatka zwyczajna">
+        </section>
+        <br>
+        <br>
+        <section>
+            <h2>O mnie</h2>
+            <p id="about">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </section>
     </div>
+    <br>
+    <footer class="flex_container">
+        <nav>
+            <ul>
+                <li>© 2022 Anna Berkowska</li>
+                <li><a href="#">Do góry</a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
 </body>
 </html>

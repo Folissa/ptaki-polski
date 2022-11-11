@@ -8,63 +8,74 @@
 	<link href="https://fonts.googleapis.com/css?family=Readex+Pro" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div id="page">
-		<header class="flex_container">
-			<h1><a href="index.html">Ptaki Polski<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-feather" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-				<path d="M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4" />
-				<path d="M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4" />
-			</svg></a></h1>
-			<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-				<path class="visibility" stroke="none" d="M0 0h24v24H0z" fill="none"/>
-				<line class="visibility" x1="4" y1="6" x2="20" y2="6" />
-				<line class="visibility" x1="4" y1="12" x2="20" y2="12" />
-				<line class="visibility" x1="4" y1="18" x2="20" y2="18" />
-			</svg>
-			<nav id="menu">
-				<ul>
-					<li class="dropdown"><a href="index.html">Strona główna</a>
-						<ul class="dropdown_menu dropdown_menu_animated">
-							<li class="dropdown_item"><a class="clickable" href="index.html#about">O mnie</a></li>
-						</ul>
-					</li>
-					<li class="dropdown"><a href="bird_species.html">Gatunki ptaków</a>
-						<ul class="dropdown_menu dropdown_menu_animated">
-							<li class="dropdown_item"><a class="clickable" href="bird_species.html#great_tit">Bogatka zwyczajna</a></li>
-							<li class="dropdown_item"><a class="clickable" href="bird_species.html#blue_tit">Modraszka zwyczajna</a></li>
-						</ul>
-					</li>
-					<li><a class="active" href="contact.html">Kontakt</a></li>
-				</ul>
-			</nav>
-		</header>
-		<br />
-		<div id="content">
-			<section id="contact">
-				<h1>Skontaktuj się ze mną!</h1>
-				<form>
-					<fieldset>
-						<legend>Formularz kontaktowy</legend>
-						<label>Imię: <input type="text" name="first_name" required maxlength="28"/></label><br />
-						<label>Nazwisko: <input type="text" name="last_name" required maxlength="28"/></label><br />
-						<label>E-mail: <input type="email" name="user_email" required maxlength="28"/></label><br />
-						<label for="user_text">Wiadomość:</label></br>
-						<textarea id="user_text" name="user_text" placeholder="Miejsce na Twoją wiadomość" maxlength="512" required></textarea><br />
-						<input type="submit" value="Wyślij" class="button">
-						<input type="reset" value="Wyczyść" class="button">
-					</fieldset>
-				</form>
-			</section>
-		</div>
-		<br />
-		<footer class="flex_container">
-			<nav>
-				<ul>
-					<li>© 2022 Anna Berkowska</li>
-					<li><a href="#">Do góry</a></li>
-				</ul>
-			</nav>
-		</footer>
+<div id="page">
+	<header class="flex_container">
+		<h1><a href="index.html">Ptaki Polski<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-feather" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4" />
+			<path d="M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4" />
+		</svg></a></h1>
+		<nav id="menu">
+			<ul>
+				<li class="dropdown"><a href="index.html">Strona główna</a>
+					<ul class="dropdown_menu dropdown_menu_animated">
+						<li class="dropdown_item"><a class="clickable" href="index.html#about">O mnie</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a class="active" href="bird_species.html">Gatunki ptaków</a>
+					<ul class="dropdown_menu dropdown_menu_animated">
+						<li class="dropdown_item"><a class="clickable" href="bird_species.html#species_about">O gatunkach</a></li>
+						<li class="dropdown_item"><a class="clickable" href="bird_species.html#great_tit">Bogatka zwyczajna</a></li>
+						<li class="dropdown_item"><a class="clickable" href="bird_species.html#blue_tit">Modraszka zwyczajna</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+	<br>
+	<div id="content">
+		<section id="contact">
+			<h2 class="header">Skontaktuj się ze mną!</h2>
+			<form>
+				<fieldset>
+					<label>Imię: <input type="text" name="first_name" required maxlength="28"></label><br>
+					<label>Nazwisko: <input type="text" name="last_name" required maxlength="28"></label><br>
+					<label>E-mail: <input type="email" name="user_email" required maxlength="28"></label><br>
+					<label>Data urodzenia: <input type="date" name="user_birthday" required></label><br>
+					<div class="choice">Ulubiony ptak:
+						<div><input type="checkbox" id="great_tit" name="favourite_bird" value="great_tit"><label for="great_tit"> Bogatka zwyczajna</label></div>
+						<div><input type="checkbox" id="blue_tit" name="favourite_bird" value="blue_tit"><label for="blue_tit"> Modraszka zwyczajna</label></div>
+					</div>
+					<div class="choice">Zapisz się do newslettera:
+						<div><input type="radio" id="yes" name="newsletter" value="yes"><label for="yes"> Tak</label></div>
+						<div><input type="radio" id="no" name="newsletter" value="no"><label for="no"> Nie</label></div>
+					</div>
+					<label for="topic">Temat wiadomości: </label>
+					<select id="topic" name="topic" required>
+						<option value="">Wybierz temat</option>
+						<option value="birds">Ptaki</option>
+						<option value="other">Inny</option>
+					</select><br>
+					<div>
+						<label for="user_text">Wiadomość:</label><br>
+						<textarea id="user_text" name="user_text" placeholder="Miejsce na Twoją wiadomość" maxlength="512" required></textarea><br>
+					</div>
+					<input type="submit" value="Wyślij" class="button">
+					<input type="reset" value="Wyczyść" class="button">
+				</fieldset>
+			</form>
+		</section>
 	</div>
+	<br>
+	<footer class="flex_container">
+		<nav>
+			<ul>
+				<li>© 2022 Anna Berkowska</li>
+				<li><a href="#">Do góry</a></li>
+			</ul>
+		</nav>
+	</footer>
+</div>
 </body>
 </html>

@@ -104,7 +104,7 @@ a {
     color: #F7FBF4;
 }
 
-h2, #contact h2 {
+#contact h2 {
     font-size: 4em;
 }
 
@@ -120,6 +120,7 @@ section h2 {
     position: relative;
     top: 0.3em;
     text-align: center;
+    font-size: 4em;
     z-index: 0;
 }
 
@@ -188,6 +189,10 @@ input {
     vertical-align: middle;
 }
 
+input[type="text"], input[type="email"] {
+    width: 300px;
+}
+
 input[type="radio"], input[type="checkbox"]{
     width: initial;
     display: inline;
@@ -220,8 +225,8 @@ textarea::placeholder {
 }
 
 @media screen
-and (max-device-width: 360px)
-and (max-device-height: 592px) {
+and (width: 411px)
+and (height: 731px) {
 
     body {
         font-size: 50%;
@@ -258,13 +263,22 @@ and (max-device-height: 592px) {
     }
 
     h2 {
-        font-size: 4em;
+        font-size: 3.5em;
         text-align: center;
         margin-bottom: 0.5em;
     }
 
     #hero h2 {
         font-size: 5em;
+    }
+
+    #hero img {
+        position: relative;
+        top: -3em;
+    }
+
+    #contact h2 {
+        font-size: 3.5em;
     }
 
     #species_about {
@@ -277,6 +291,10 @@ and (max-device-height: 592px) {
         font-size: 1.8em;
     }
 
+    input[type="text"], input[type="email"] {
+        width: 60vw;
+    }
+
     form {
         width: 70vw;
     }
@@ -285,15 +303,20 @@ and (max-device-height: 592px) {
         font-size: 90%;
     }
 
-    input {
+    select {
+        margin: 1vw;
         display: block;
-        width: 119%;
+    }
+
+    input, textarea, select {
+        display: block;
+        width: 60vw;
     }
 }
 
 @media screen
-and (max-device-width: 360px)
-and (max-device-height: 592px)
+and (width: 411px)
+and (height: 731px)
 and (orientation: portrait) {
 
     body {
@@ -331,13 +354,22 @@ and (orientation: portrait) {
     }
 
     h2 {
-        font-size: 4em;
+        font-size: 3.5em;
         text-align: center;
         margin-bottom: 0.5em;
     }
 
     #hero h2 {
         font-size: 5em;
+    }
+
+    #hero img {
+        position: relative;
+        top: -3em;
+    }
+
+    #contact h2 {
+        font-size: 3.5em;
     }
 
     #species_about {
@@ -350,6 +382,10 @@ and (orientation: portrait) {
         font-size: 1.8em;
     }
 
+    input[type="text"], input[type="email"] {
+        width: 60vw;
+    }
+
     form {
         width: 70vw;
     }
@@ -358,8 +394,12 @@ and (orientation: portrait) {
         font-size: 90%;
     }
 
-    input {
+    select {
+        margin: 1vw;
+    }
+
+    input, textarea, select {
         display: block;
-        width: 119%;
+        width: 60vw;
     }
 }

@@ -51,6 +51,24 @@ function toggleLight() {
         contactForm.setAttribute("class", "light_border")
     }
 
+    let tables = document.getElementsByTagName("table");
+    for (let i = 0; i < tables.length; i ++)
+    {
+        tables[i].setAttribute("class", "light_border")
+    }
+
+    let tableHeaders = document.getElementsByTagName("th");
+    for (let i = 0; i < tables.length; i ++)
+    {
+        tableHeaders[i].setAttribute("class", "light_border")
+    }
+
+    let tableData = document.getElementsByTagName("td");
+    for (let i = 0; i < tables.length; i ++)
+    {
+        tableData[i].setAttribute("class", "light_border")
+    }
+
     localStorage.setItem("theme", "light");
 }
 
@@ -74,6 +92,24 @@ function toggleDark() {
     if (document.getElementById("contact_form")) {
         let contactForm = document.getElementById("contact_form");
         contactForm.setAttribute("class", "dark_border")
+    }
+
+    let tables = document.getElementsByTagName("table");
+    for (let i = 0; i < tables.length; i ++)
+    {
+        tables[i].setAttribute("class", "dark_border")
+    }
+
+    let tableHeaders = document.getElementsByTagName("th");
+    for (let i = 0; i < tables.length; i ++)
+    {
+        tableHeaders[i].setAttribute("class", "dark_border")
+    }
+
+    let tableData = document.getElementsByTagName("td");
+    for (let i = 0; i < tables.length; i ++)
+    {
+        tableData[i].setAttribute("class", "dark_border")
     }
 
     localStorage.setItem("theme", "dark");

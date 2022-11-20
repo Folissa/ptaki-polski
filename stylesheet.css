@@ -6,10 +6,11 @@
 body {
     font-family: "Readex Pro", sans-serif;
     background: #F7FBF4;
+    color: #F7FBF4;
 }
 
 #page {
-    margin: 5vh;
+    margin: 4vh;
 }
 
 section {
@@ -33,6 +34,11 @@ svg {
     height: 40px;
 }
 
+footer svg {
+    position: relative;
+    top: 0.4em;
+}
+
 nav {
     color: #847715;
     flex-shrink: 0;
@@ -53,8 +59,14 @@ a {
     font-weight: bold;
 }
 
-.visibility {
+.visible {
     display: initial;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
+    cursor: pointer;
 }
 
 .dropdown {
@@ -67,9 +79,9 @@ a {
     position: absolute;
     width: 100%;
     background: #847715;
-    color: #F7FBF4;
     border-radius: 5px;
     top: 100%;
+    color: #F7FBF4;
 }
 
 .dropdown:hover .dropdown_menu_animated {
@@ -101,7 +113,6 @@ a {
 #content {
     background: #77ABDB;
     border-radius: 28px;
-    color: #F7FBF4;
 }
 
 #contact h2 {
@@ -179,7 +190,7 @@ form {
 
 fieldset {
     padding: 1em;
-    border: solid 2px white;
+    border: solid 2px;
     border-radius: 20px;
     font-size: 1.5em;
     line-height: 1.6em;
@@ -222,6 +233,26 @@ textarea {
 
 textarea::placeholder {
     color: #706a6f;
+}
+
+.light_font {
+    color: #F7FBF4;
+}
+
+.border_light {
+    border-color: #F7FBF4;
+}
+
+.border_dark {
+    border-color: #312e2e;
+}
+
+.dark_font  {
+    color: #312e2e;
+}
+
+.dark_background {
+    background-color: #312e2e;
 }
 
 @media screen

@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="height=device-height, iniital-scale=1.0">
+	<meta name="viewport" content="height=device-height, initial-scale=1.0">
 	<title>Birds</title>
 	<link href="stylesheet.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Readex+Pro" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
 <div id="page">
@@ -39,11 +39,11 @@
 	<div id="content">
 		<section id="contact">
 			<h2 class="header">Skontaktuj się ze mną!</h2>
-			<form>
-				<fieldset>
-					<label>Imię: <input type="text" name="first_name" required maxlength="28"></label><br>
-					<label>Nazwisko: <input type="text" name="last_name" required maxlength="28"></label><br>
-					<label>E-mail: <input type="email" name="user_email" required maxlength="28"></label><br>
+			<form id="form" action="http://192.168.56.10:8080/receive.php" method="post">
+				<fieldset id="contact_form">
+					<label>Imię: <input type="text" name="first_name" required maxlength="28" class="text"></label><br>
+					<label>Nazwisko: <input type="text" name="last_name" required maxlength="28" class="text"></label><br>
+					<label>E-mail: <input type="email" name="user_email" required maxlength="28" class="text"></label><br>
 					<label>Data urodzenia: <input type="date" name="user_birthday" required></label><br>
 					<div class="choice">Ulubiony ptak:
 						<div><input type="checkbox" id="great_tit" name="favourite_bird" value="great_tit"><label for="great_tit"> Bogatka zwyczajna</label></div>
@@ -72,12 +72,14 @@
 	<br>
 	<footer class="flex_container">
 		<nav>
-			<ul>
+			<ul id="footer_list">
 				<li>© 2022 Anna Berkowska</li>
 				<li><a href="#">Do góry</a></li>
 			</ul>
 		</nav>
 	</footer>
+	<script src="theme.js"></script>
+	<script src="form.js"></script>
 </div>
 </body>
 </html>

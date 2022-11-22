@@ -324,9 +324,9 @@ table {
 }
 
 @media screen
-and (max-width: 500px)
-and (max-height: 800px) {
-
+and (device-width: 360px)
+and (device-height: 592px)
+and (-webkit-device-pixel-ratio: 3) {
     body {
         font-size: 50%;
     }

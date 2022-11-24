@@ -178,7 +178,7 @@ img {
 }
 
 .overflow {
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 #species img {

@@ -333,6 +333,13 @@ table {
 }
 
 @media screen
+and (max-width: 1574px) {
+    .choice div {
+        display: block;
+    }
+}
+
+@media screen
 and (device-width: 412px)
 and (device-height: 732px) {
     body {

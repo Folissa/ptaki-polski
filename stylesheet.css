@@ -177,6 +177,10 @@ img {
     padding: 2em 2em 0 2em;
 }
 
+.overflow {
+    overflow-x: scroll;
+}
+
 #species img {
     border-radius: 20px;
 }

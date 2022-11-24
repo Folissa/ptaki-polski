@@ -332,7 +332,7 @@ table {
 and (device-width: 412px)
 and (device-height: 732px) {
     body {
-        font-size: 50%;
+        font-size: 55%;
     }
 
     #page {
@@ -356,9 +356,6 @@ and (device-height: 732px) {
         display: none;
     }
 
-    p {
-        text-align: justify;
-    }
 
     #about {
         margin-top: -2.5em;
@@ -393,7 +390,7 @@ and (device-height: 732px) {
 
     #hero img {
         position: relative;
-        top: -3em;
+        top: -2.8em;
     }
 
     #contact h2 {
